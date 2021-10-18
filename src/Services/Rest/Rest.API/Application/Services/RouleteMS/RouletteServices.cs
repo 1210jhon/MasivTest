@@ -133,7 +133,7 @@ namespace Rest.API.Application.Services.RouleteMS
             {
                 throw new RouletteDomainException("Número de apuesta invalido.");
             }
-            if (item.MoneyBet < 0 || item.MoneyBet > 10000)
+            if (item.MoneyBet <= 0 || item.MoneyBet > 10000)
             {
                 throw new RouletteDomainException("Dinero de apuesta invalido.");
             }
